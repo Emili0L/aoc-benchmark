@@ -15,7 +15,7 @@ public class ChallengeController {
     @Autowired
     private ChallengeService challengeService;
 
-    @RequestMapping("/")
+    @RequestMapping("/challenge")
     public String requestMethodName() {
         return challengeService.getChallenges().getFirst().getName();
     }
