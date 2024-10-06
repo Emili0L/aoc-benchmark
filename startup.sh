@@ -1,0 +1,1 @@
+printf "Starting AOC-Benchmark"

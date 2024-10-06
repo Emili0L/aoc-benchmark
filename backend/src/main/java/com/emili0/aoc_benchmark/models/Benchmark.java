@@ -3,6 +3,8 @@ package com.emili0.aoc_benchmark.models;
 public class Benchmark {
     private int id;
     private String name;
+    private String description;
+    private byte[] code;
     public int getId() {
         return id;
     }
@@ -10,23 +12,21 @@ public class Benchmark {
         this.id = id;
     }
     public String getName() {
-        return name;
+        return this.name;
     }
     public void setName(String name) {
         this.name = name;
     }
     public String getDescription() {
-        return description;
+        return this.description;
     }
     public void setDescription(String description) {
         this.description = description;
     }
-    public String getCode() {
-        return Code;
+    public byte[] getCode() {
+        return this.code;
     }
-    public void setCode(String code) {
-        Code = code;
+    public void setCode(byte[] code) {
+        this.code = code;
     }
-    private String description;
-    private String Code;
 }

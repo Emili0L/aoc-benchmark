@@ -28,4 +28,12 @@ public class BenchmarkDAO {
             new BenchmarkRowMapper()
             );
     }
+
+    public void postBenchmark(Benchmark benchmark) {
+        jdbcTemplate.update(
+            "INSERT INTO benchmark(id, name, description, code) VALUES (?,?,?,?)",
+            0, benchmark.getName(), benchmark.getDescription(), benchmark.getCode()
+        );
+        return;
+    }
 }
